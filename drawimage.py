@@ -69,7 +69,7 @@ draw = ImageDraw.Draw(image)
 draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
 disp.image(image)
 
-image = Image.open("test.jpg")
+image = Image.open("test.png")
 
 # Scale the image to the smaller screen dimension
 image_ratio = image.width / image.height

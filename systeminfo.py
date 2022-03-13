@@ -54,6 +54,8 @@ disp = st7735.ST7735R(spi, rotation=90,                             # 1.8" ST773
 )
 # pylint: enable=line-too-long
 
+print("Setup complete")
+
 # Create blank image for drawing.
 # Make sure to create image with mode 'RGB' for full color.
 if disp.rotation % 180 == 90:
@@ -80,6 +82,8 @@ x = 0
 # same directory as the python script!
 # Some other nice fonts to try: http://www.dafont.com/bitmap.php
 font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 24)
+
+print("Loop:")
 
 while True:
     # Draw a black filled box to clear the image.

@@ -47,8 +47,6 @@ disp = st7735.ST7735R(spi, rotation=90,                             # 1.8" ST773
 # disp = ssd1351.SSD1351(spi, height=96, y_offset=32, rotation=180, # 1.27" SSD1351
 # disp = ssd1331.SSD1331(spi, rotation=180,                         # 0.96" SSD1331
 # disp = ili9341.ILI9341(
-    spi,
-    rotation=90,  # 2.2", 2.4", 2.8", 3.2" ILI9341
     cs=cs_pin,
     dc=dc_pin,
     rst=reset_pin,
